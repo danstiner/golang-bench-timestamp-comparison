@@ -59,3 +59,5 @@ clean:
 test:
 	go test ./...
 
+bench:
+	go test -bench=. -benchtime=20s
