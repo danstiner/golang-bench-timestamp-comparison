@@ -8,7 +8,7 @@ GIT_DIRTY=$(shell test -n "`git status --porcelain`" && echo "+CHANGES" || true)
 BUILD_DATE=$(shell date '+%Y-%m-%d-%H:%M:%S')
 IMAGE_NAME := "lacion/golang-bench-compare"
 
-default: test
+default: bench
 
 help:
 	@echo 'Management commands for golang-bench-compare:'
